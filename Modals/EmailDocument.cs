@@ -7,5 +7,8 @@ namespace NewsletterAPI.Modals
     {
         [FirestoreDocumentId]
         public string Email { get; set; }
+
+        [FirestoreProperty]
+        public string Name { get; set; }
     }
 }

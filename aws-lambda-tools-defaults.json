@@ -1,0 +1,21 @@
+
+{
+    "region" : "eu-north-1",
+    "profile" : "default",
+    "configuration" : "Release",
+    "framework"     : "net6.0",
+    "function-name" : "OrbitwiseNewsletterAPI",
+    "function-description" : "",
+    "package-type"         : "Zip",
+    "function-handler"     : "NewsletterAPI",
+    "function-memory-size" : 256,
+    "function-role"        : "arn:aws:iam::146759317589:role/lambda_exec_OrbitwiseNewsletterAPI-2",
+    "function-timeout"     : 10,
+    "function-runtime"     : "dotnet6",
+    "function-architecture" : "x86_64",
+    "function-subnets"      : "",
+    "function-security-groups" : "",
+    "tracing-mode"             : "PassThrough",
+    "environment-variables"    : "",
+    "image-tag"                : ""
+}

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using NewsletterAPI.Modals;
 using NewsletterAPI.Services;
+using System.Threading.Tasks;
 
 namespace NewsletterAPI.Controllers
 {
@@ -38,11 +39,9 @@ namespace NewsletterAPI.Controllers
 
         [Route("GetAllEmails")]
         [HttpGet]
-        public async Task<IActionResult> GetAllEmails()
+        public async Task<List<EmailDocument>> GetAllEmails()
         {
-            var allEmails = await _IFirestoreService.GetAll();
-
-            return Ok();
+            return await _IFirestoreService.GetAll();
         }
     }
 }
